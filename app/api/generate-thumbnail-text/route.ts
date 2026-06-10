@@ -10,7 +10,7 @@ import {
 } from "@/services/thumbnail-analyzer.service";
 
 import {
-  generateIdeas,
+  generateAIResponse,
 } from "@/services/gemini.service";
 
 export async function POST(

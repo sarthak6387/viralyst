@@ -6,7 +6,7 @@ import {
 } from "@/services/trend-engine.service";
 
 import {
-  generateIdeas,
+  generateAIResponse,
 } from "@/services/gemini.service";
 
 export async function POST(
@@ -73,7 +73,7 @@ Make the content:
 `;
 
     const aiResponse =
-      await generateIdeas(prompt);
+      await generateAIResponse((prompt);
 
     return NextResponse.json({
       success: true,

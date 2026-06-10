@@ -2,13 +2,13 @@ import { NextResponse }
   from "next/server";
 
 import {
-  generateIdeas,
+  generateAIResponse,
 } from "@/services/gemini.service";
 
 export async function GET() {
 
   const result =
-    await generateIdeas(
+    await generateAIResponse(
       "Generate 5 viral coding titles"
     );
 
