@@ -73,7 +73,7 @@ Make the content:
 `;
 
     const aiResponse =
-      await generateAIResponse((prompt);
+      await generateAIResponse(prompt);
 
     return NextResponse.json({
       success: true,
